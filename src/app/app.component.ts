@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NetflixClone';
+
+  openAnswer(){
+    let element = document.getElementsByClassName('faq-answer')[0];
+    console.log(element);
+    element.classList.toggle('open');
+  }
 }
